@@ -46,6 +46,18 @@
         animation: glow 3s infinite ease-in-out;
       }
 
+      /* RGB Shimmer for Verified Banner */
+      @keyframes rgb-shimmer {
+        0% { background-position: 0% 50%; }
+        50% { background-position: 100% 50%; }
+        100% { background-position: 0% 50%; }
+      }
+      .animate-rgb {
+        background: linear-gradient(270deg, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+        background-size: 400% 400%;
+        animation: rgb-shimmer 5s linear infinite;
+      }
+
       /* Loader Spinner */
       .loader {
         border: 3px solid rgba(255, 255, 255, 0.1);
